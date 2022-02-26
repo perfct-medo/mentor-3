@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+}
+
+@media (max-width:1500px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        width: 375px;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medo {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    margin: 0 50px;
+}
+
+.box {
+    width: 400px;
+    margin: 100px auto;
+    background-color: white;
+    box-shadow: 0 0 9px 0px #00000036;
+    border-radius: 15px;
+}
+
+@media (max-width:576px) {
+    .medo {
+        display: none;
+    }
+    .box {
+        width: 350px;
+    }
+}
+
+.box .medo-2 {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.box .info {
+    text-align: center;
+    padding: 30px;
+}
+
+.box .info h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 0;
+    font-size: 26px;
+}
+
+.box .info p {
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+}
+
+.box .card {
+    background-color: hsl(225, 100%, 98%);
+    margin: 10px 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+
+.span {
+    margin-right: 50px;
+}
+
+.card span.s-1 {
+    display: block;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+span.s-2 {
+    display: block;
+    color: hsl(224, 23%, 55%);
+}
+
+.card a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+
+.card a:hover {
+    color: #766cf1;
+    text-decoration: none;
+}
+
+.box .pi a {
+    display: block;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin: 25px auto;
+    width: fit-content;
+    padding: 10px 85px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.box .pi a:hover {
+    background-color: #766cf1;
+}
+
+.box .ca-n {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.box .ca-n:hover {
+    color: hsl(223, 47%, 23%);
+}
